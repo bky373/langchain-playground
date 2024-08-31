@@ -2,6 +2,7 @@ import os
 
 import dotenv
 from langchain_core.messages import SystemMessage, HumanMessage
+from langchain_core.output_parsers import StrOutputParser
 from langchain_openai import ChatOpenAI
 
 dotenv.load_dotenv()
@@ -16,6 +17,15 @@ messages = [
     HumanMessage(content="Hi!"),
 ]
 
-result = model.invoke(messages)
-print(result)
+# result = model.invoke(messages)
+# print(result)
 # content='안녕하세요!' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 3, 'prompt_tokens': 20, 'total_tokens': 23}, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_f33667828e', 'finish_reason': 'stop', 'logprobs': None} id='run-cf809816-f888-4500-a4fa-097493254214-0' usage_metadata={'input_tokens': 20, 'output_tokens': 3, 'total_tokens': 23}
+
+
+parser = StrOutputParser()
+# parsed_result = parser.invoke(result)
+# print(parsed_result)  # 안녕하세요!
+chain = model | parser
+chain_result = chain.invoke(messages)
+print(chain_result)  # 안녕하세요!
+# LangSmith trace: https://smith.langchain.com/public/eea6c107-f628-4707-95fe-168b521ebf11/r
