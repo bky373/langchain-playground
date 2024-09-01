@@ -124,3 +124,5 @@ websockets==13.0.1
 wrapt==1.16.0
 yarl==1.9.5
 zipp==3.20.1
+
+langgraph~=0.2.15
