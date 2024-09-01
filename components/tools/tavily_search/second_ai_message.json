@@ -1,0 +1,23 @@
+{
+  "content": "The winner of the last women's singles Wimbledon, held in 2024, is Barbora Krejcikova. She defeated Jasmine Paolini in the final with a score of 6-2, 2-6, 6-4. This victory marks Krejcikova's first Wimbledon title and her second Grand Slam title overall.",
+  "additional_kwargs": {
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 70,
+      "prompt_tokens": 708,
+      "total_tokens": 778
+    },
+    "model_name": "gpt-4o-mini-2024-07-18",
+    "system_fingerprint": "fp_f905cf32a9",
+    "finish_reason": "stop",
+    "logprobs": null
+  },
+  "id": "run-39d4c169-5953-4f54-9ada-57acf56d539b-0",
+  "usage_metadata": {
+    "input_tokens": 708,
+    "output_tokens": 70,
+    "total_tokens": 778
+  }
+}

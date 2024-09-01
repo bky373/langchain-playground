@@ -1,0 +1,43 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Za9N5avNf58MItAnussZ6I2h",
+        "function": {
+          "arguments": "{\"query\":\"last women's singles Wimbledon winner 2024\"}",
+          "name": "tavily_search_results_json"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 25,
+      "prompt_tokens": 104,
+      "total_tokens": 129
+    },
+    "model_name": "gpt-4o-mini-2024-07-18",
+    "system_fingerprint": "fp_f33667828e",
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "id": "run-29db9bb4-4ad5-49a5-bef0-f62873ad17f2-0",
+  "tool_calls": [
+    {
+      "name": "tavily_search_results_json",
+      "args": {
+        "query": "last women's singles Wimbledon winner 2024"
+      },
+      "id": "call_Za9N5avNf58MItAnussZ6I2h",
+      "type": "tool_call"
+    }
+  ],
+  "usage_metadata": {
+    "input_tokens": 104,
+    "output_tokens": 25,
+    "total_tokens": 129
+  }
+}
